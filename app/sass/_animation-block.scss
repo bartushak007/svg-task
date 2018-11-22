@@ -1,0 +1,65 @@
+.animation-block {
+  height: 440px;
+  width: 880px;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__big-rect {
+    height: 220px;
+    width: 880px;
+    fill: #f6eafe;
+
+    &--second {
+      fill: #29282e;
+    }
+  }
+
+  &__btn {
+    &:hover > .animation-block__anim {
+      fill-opacity: 0.9;
+      x: 5px;
+      width: 340px;
+    }
+
+    &:hover > .animation-block__text {
+      fill: white;
+    }
+  }
+  &__base {
+    cursor: pointer;
+    width: 340px;
+    height: 70px;
+    stroke: #fe0067;
+    stroke-width: 5px;
+    fill: white;
+    fill-opacity: 0.9;
+    z-index: 999;
+
+    &--other-color {
+      stroke: #7300b3;
+    }
+  }
+
+  &__text {
+    font: bold 24px sans-serif;
+    fill: #fe0067;
+
+    &--other-color {
+      fill: #7300b3;
+    }
+  }
+
+  &__anim {
+    width: 0px;
+    fill: #fe0067;
+    height: 70px;
+    fill-opacity: 0.5;
+    transition: all 1s;
+
+    &--other-color {
+      fill: #7300b3;
+    }
+  }
+}

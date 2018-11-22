@@ -1,0 +1,74 @@
+.hamburger {
+  &__div {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+  }
+
+  &__svg {
+    width: 280px;
+    height: 228px;
+  }
+
+  &__input {
+    position: absolute;
+    bottom: 999999px;
+    visibility: hidden;
+    &:checked ~ .hamburger__svg .hamburger__small-rect--one {
+      transform: rotate(45deg);
+      x: 30px;
+      y: -20px;
+      width: 120px;
+    }
+
+    &:checked ~ .hamburger__svg .hamburger__small-rect--two {
+      transform: rotate(45deg);
+      x: 30px;
+      y: -20px;
+      width: 120px;
+    }
+
+    &:checked ~ .hamburger__svg .hamburger__small-rect--three {
+      transform: rotate(-45deg);
+      x: -50px;
+      y: 80px;
+      width: 120px;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &__big-rect {
+    width: 280px;
+    height: 228px;
+    fill: black;
+  }
+
+  &__small-rect {
+    fill: white;
+    width: 132px;
+    height: 23px;
+    rx: 13px;
+    ry: 13px;
+    x: 4px;
+    transition: all 0.5s;
+
+    &--one {
+      y: 13px;
+    }
+
+    &--two {
+      y: 46px;
+    }
+
+    &--three {
+      y: 79px;
+    }
+  }
+}

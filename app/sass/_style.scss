@@ -1,0 +1,95 @@
+.line {
+  stroke: blue;
+  stroke-width: 2;
+
+  &--one {
+    stroke: black;
+    stroke-width: 3;
+  }
+  &--two {
+    stroke: red;
+    stroke-width: 3;
+  }
+}
+
+.circle {
+  fill: blue;
+  stroke-width: 2;
+}
+
+.circle-one {
+  fill: transparent;
+  stroke: yellow;
+  stroke-width: 15;
+  stroke-dasharray: 192, 192;
+}
+
+.ellipse {
+  fill: transparent;
+  stroke: yellow;
+  stroke-dasharray: 25, 25;
+  stroke-width: 4;
+}
+
+.path {
+  stroke-dasharray: 192, 192;
+  animation: dash 2s infinite linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 768;
+  }
+}
+
+.base64 {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMDAgMjAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzM5QjU0QTt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDAsMEM0NC43NywwLDAsNDQuNzcsMCwxMDBjMCw1NS4yMyw0NC43NywxMDAsMTAwLDEwMHMxMDAtNDQuNzcsMTAwLTEwMEMyMDAsNDQuNzcsMTU1LjIzLDAsMTAwLDB6CgkgTTE0Ni4xOSwxNjMuNTdMMTAwLDEzOS4yOWwtNDYuMTksMjQuMjhsOC44Mi01MS40M0wyNS4yNyw3NS43Mmw1MS42NC03LjVMMTAwLDIxLjQybDIzLjA5LDQ2Ljc5bDUxLjY0LDcuNWwtMzcuMzcsMzYuNDIKCUwxNDYuMTksMTYzLjU3eiIvPgo8L3N2Zz4K");
+  height: 100px;
+}
+
+.img {
+  clip-path: url(#myImg);
+}
+
+.center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .center {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .center {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+  .center {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+  .center {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .center {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+

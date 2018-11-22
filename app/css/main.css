@@ -1,0 +1,234 @@
+.line {
+  stroke: blue;
+  stroke-width: 2;
+}
+
+.line--one {
+  stroke: black;
+  stroke-width: 3;
+}
+
+.line--two {
+  stroke: red;
+  stroke-width: 3;
+}
+
+.circle {
+  fill: blue;
+  stroke-width: 2;
+}
+
+.circle-one {
+  fill: transparent;
+  stroke: yellow;
+  stroke-width: 15;
+  stroke-dasharray: 192, 192;
+}
+
+.ellipse {
+  fill: transparent;
+  stroke: yellow;
+  stroke-dasharray: 25, 25;
+  stroke-width: 4;
+}
+
+.path {
+  stroke-dasharray: 192, 192;
+  animation: dash 2s infinite linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 768;
+  }
+}
+
+.base64 {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMDAgMjAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzM5QjU0QTt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDAsMEM0NC43NywwLDAsNDQuNzcsMCwxMDBjMCw1NS4yMyw0NC43NywxMDAsMTAwLDEwMHMxMDAtNDQuNzcsMTAwLTEwMEMyMDAsNDQuNzcsMTU1LjIzLDAsMTAwLDB6CgkgTTE0Ni4xOSwxNjMuNTdMMTAwLDEzOS4yOWwtNDYuMTksMjQuMjhsOC44Mi01MS40M0wyNS4yNyw3NS43Mmw1MS42NC03LjVMMTAwLDIxLjQybDIzLjA5LDQ2Ljc5bDUxLjY0LDcuNWwtMzcuMzcsMzYuNDIKCUwxNDYuMTksMTYzLjU3eiIvPgo8L3N2Zz4K");
+  height: 100px;
+}
+
+.img {
+  clip-path: url(#myImg);
+}
+
+.center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .center {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .center {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+  .center {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+  .center {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .center {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+.animation-block {
+  height: 440px;
+  width: 880px;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.animation-block__big-rect {
+  height: 220px;
+  width: 880px;
+  fill: #f6eafe;
+}
+
+.animation-block__big-rect--second {
+  fill: #29282e;
+}
+
+.animation-block__btn:hover > .animation-block__anim {
+  fill-opacity: 0.9;
+  x: 5px;
+  width: 340px;
+}
+
+.animation-block__btn:hover > .animation-block__text {
+  fill: white;
+}
+
+.animation-block__base {
+  cursor: pointer;
+  width: 340px;
+  height: 70px;
+  stroke: #fe0067;
+  stroke-width: 5px;
+  fill: white;
+  fill-opacity: 0.9;
+  z-index: 999;
+}
+
+.animation-block__base--other-color {
+  stroke: #7300b3;
+}
+
+.animation-block__text {
+  font: bold 24px sans-serif;
+  fill: #fe0067;
+}
+
+.animation-block__text--other-color {
+  fill: #7300b3;
+}
+
+.animation-block__anim {
+  width: 0px;
+  fill: #fe0067;
+  height: 70px;
+  fill-opacity: 0.5;
+  transition: all 1s;
+}
+
+.animation-block__anim--other-color {
+  fill: #7300b3;
+}
+
+.hamburger__div {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+}
+
+.hamburger__svg {
+  width: 280px;
+  height: 228px;
+}
+
+.hamburger__input {
+  position: absolute;
+  bottom: 999999px;
+  visibility: hidden;
+}
+
+.hamburger__input:checked ~ .hamburger__svg .hamburger__small-rect--one {
+  transform: rotate(45deg);
+  x: 30px;
+  y: -20px;
+  width: 120px;
+}
+
+.hamburger__input:checked ~ .hamburger__svg .hamburger__small-rect--two {
+  transform: rotate(45deg);
+  x: 30px;
+  y: -20px;
+  width: 120px;
+}
+
+.hamburger__input:checked ~ .hamburger__svg .hamburger__small-rect--three {
+  transform: rotate(-45deg);
+  x: -50px;
+  y: 80px;
+  width: 120px;
+}
+
+.hamburger__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger__big-rect {
+  width: 280px;
+  height: 228px;
+  fill: black;
+}
+
+.hamburger__small-rect {
+  fill: white;
+  width: 132px;
+  height: 23px;
+  rx: 13px;
+  ry: 13px;
+  x: 4px;
+  transition: all 0.5s;
+}
+
+.hamburger__small-rect--one {
+  y: 13px;
+}
+
+.hamburger__small-rect--two {
+  y: 46px;
+}
+
+.hamburger__small-rect--three {
+  y: 79px;
+}
