@@ -7,8 +7,6 @@
   transform: translateX(-50%);
 
   &__big-rect {
-    height: 220px;
-    width: 880px;
     fill: #f6eafe;
 
     &--second {
@@ -29,8 +27,7 @@
   }
   &__base {
     cursor: pointer;
-    width: 340px;
-    height: 70px;
+
     stroke: #fe0067;
     stroke-width: 5px;
     fill: white;
@@ -52,9 +49,8 @@
   }
 
   &__anim {
-    width: 0px;
     fill: #fe0067;
-    height: 70px;
+
     fill-opacity: 0.5;
     transition: all 1s;
 

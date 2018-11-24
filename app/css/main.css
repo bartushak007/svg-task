@@ -1,6 +1,5 @@
 .line {
-  stroke: blue;
-  stroke-width: 2;
+  stroke: green;
 }
 
 .line--one {
@@ -15,7 +14,6 @@
 
 .circle {
   fill: blue;
-  stroke-width: 2;
 }
 
 .circle-one {
@@ -34,7 +32,10 @@
 
 .path {
   stroke-dasharray: 192, 192;
+  rx: 13px;
+  ry: 13px;
   animation: dash 2s infinite linear;
+  stroke-linecap: round;
 }
 
 @keyframes dash {
@@ -103,8 +104,6 @@
 }
 
 .animation-block__big-rect {
-  height: 220px;
-  width: 880px;
   fill: #f6eafe;
 }
 
@@ -124,8 +123,6 @@
 
 .animation-block__base {
   cursor: pointer;
-  width: 340px;
-  height: 70px;
   stroke: #fe0067;
   stroke-width: 5px;
   fill: white;
@@ -147,9 +144,7 @@
 }
 
 .animation-block__anim {
-  width: 0px;
   fill: #fe0067;
-  height: 70px;
   fill-opacity: 0.5;
   transition: all 1s;
 }
@@ -206,15 +201,11 @@
 }
 
 .hamburger__big-rect {
-  width: 280px;
-  height: 228px;
   fill: black;
 }
 
 .hamburger__small-rect {
   fill: white;
-  width: 132px;
-  height: 23px;
   rx: 13px;
   ry: 13px;
   x: 4px;

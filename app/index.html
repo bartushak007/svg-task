@@ -12,14 +12,14 @@
     <!-- task 1.1 -->
     <line class="line" x1="0" y1="0" x2="300" y2="0"/>
     <!-- task 1.2 -->
-    <circle cx="130" cy="130" r="125" class="circle"/>
+    <circle cx="150" cy="140" r="125" class="circle"/>
     <!-- task 1.3 -->
     <line class="line--one" x1="0" y1="450" x2="300" y2="450"  />
     <line class="line--two" x1="150" y1="300" x2="150" y2="600"  />
     <!-- task 1.4 -->
-    <ellipse class="ellipse" cx="450" cy="200" rx="200" ry="100"/>
+    <ellipse class="ellipse" cx="550" cy="130" rx="200" ry="100"/>
     <!-- 3. Loader -->
-    <circle cx="450" cy="450" r="125" class="circle-one path"/>
+    <circle cx="550" cy="450" r="125" class="circle-one path"/>
   </svg>
   <!--   2. 3 ways to add svg to the document: -->
   <svg x="0px" y="0px"
@@ -34,40 +34,42 @@ L146.19,163.57z"/>
 <object data="images/circle-star.svg" type="image/svg+xml"></object>
 <div class="base64"></div>
 <!-- 4. Responsive SVG -->
-<svg class="center">
-  <defs>
-    <clipPath id="circleView">
-      <rect  width="100%" height="100%" stroke="red" stroke-width="5"/>            
-    </clipPath>
-  </defs>
+<svg class="center">  
+  <clipPath id="circleView">
+    <rect  width="100%" height="100%" stroke="red" stroke-width="5"/>            
+  </clipPath>  
   <image width="100%" height="100%" xlink:href="images/img.jpg" clip-path="url(#circleView)" />    
 </svg>
 <!--  5. Animated buttons -->
 <svg class="animation-block">
-  <rect x="0" y="0" class="animation-block__big-rect"/>
-  <rect x="0" y="220" class="animation-block__big-rect animation-block__big-rect--second"/>  
+  <rect x="0" y="0" height="220px"
+    width="880px" class="animation-block__big-rect"/>
+  <rect x="0" y="220" height="220px"
+    width="880px" class="animation-block__big-rect animation-block__big-rect--second"/>  
   <svg x="265" y="73" class="animation-block__btn" viewbox="0 0 350 80" width="350" height="80">
-    <rect class="animation-block__base" x="5" y="5"/>
-    <rect class="animation-block__anim" x="170" y="5"/>
+    <rect class="animation-block__base" width="340"
+    height="70" x="5" y="5"/>
+    <rect class="animation-block__anim" width="0px" height="70px" x="170" y="5"/>
     <text x="110" y="47" class="animation-block__text">CONTINUE</text>
     <text/>
   </svg>
   <svg x="265" y="290" class="animation-block__btn" viewbox="0 0 350 80" width="350" height="80">
-    <rect class="animation-block__base animation-block__base--other-color" x="5" y="5"/>
-    <rect class="animation-block__anim animation-block__anim--other-color" x="170" y="5"/>
+    <rect class="animation-block__base animation-block__base--other-color" width="340"
+    height="70" x="5" y="5"/>
+    <rect class="animation-block__anim animation-block__anim--other-color" width="0px" height="70px" x="170" y="5"/>
     <text x="110" y="47" class="animation-block__text animation-block__text--other-color">CONTINUE</text>
     <text/>
   </svg>
 </svg>
-<h1>click me</h1>
+<center><h1>click me</h1></center>
 <div class="hamburger__div">
   <input class="hamburger__input" type="checkbox" id="input">
-  <label class="hamburger__label" for="input"> ggg</label>
+  <label class="hamburger__label" for="input"></label>
   <svg class="hamburger__svg" viewbox="0 0 140 114">    
-    <rect x="0" y="0" class="hamburger__big-rect"/>
-    <rect class="hamburger__small-rect hamburger__small-rect--one"/>
-    <rect class="hamburger__small-rect hamburger__small-rect--two"/>
-    <rect class="hamburger__small-rect hamburger__small-rect--three"/>
+    <rect  width="280px" height="228px" x="0" y="0" class="hamburger__big-rect"/>
+    <rect width="132px" height="23px" class="hamburger__small-rect hamburger__small-rect--one"/>
+    <rect width="132px" height="23px" class="hamburger__small-rect hamburger__small-rect--two"/>
+    <rect width="132px" height="23px" class="hamburger__small-rect hamburger__small-rect--three"/>
   </svg>
 </div>
 </body>

@@ -1,6 +1,5 @@
 .line {
-  stroke: blue;
-  stroke-width: 2;
+  stroke: green;
 
   &--one {
     stroke: black;
@@ -14,7 +13,6 @@
 
 .circle {
   fill: blue;
-  stroke-width: 2;
 }
 
 .circle-one {
@@ -33,7 +31,10 @@
 
 .path {
   stroke-dasharray: 192, 192;
+  rx: 13px;
+  ry: 13px;
   animation: dash 2s infinite linear;
+  stroke-linecap: round;
 }
 
 @keyframes dash {
@@ -91,5 +92,3 @@
     height: 400px;
   }
 }
-
-
